@@ -1,9 +1,12 @@
+var isNumber = require("is_number");
+
+
 var MAX_SAFE_INTEGER = Math.pow(2, 53) - 1;
 
 
 module.exports = isLength;
 
 
-function isLength(obj) {
-    return typeof(obj) === "number" && obj > -1 && obj % 1 === 0 && obj <= MAX_SAFE_INTEGER;
+function isLength(value) {
+    return isNumber(value) && value > -1 && value % 1 === 0 && value <= MAX_SAFE_INTEGER;
 }
