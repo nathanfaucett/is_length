@@ -1,4 +1,4 @@
-var isNumber = require("is_number");
+var isNumber = require("@nathanfaucett/is_number");
 
 
 var MAX_SAFE_INTEGER = Math.pow(2, 53) - 1;
